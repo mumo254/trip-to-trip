@@ -1,0 +1,51 @@
+<div class="bark"></div>
+
+  <app-carousel></app-carousel>
+  
+  <!-- <div  class="section--dark-greyy">
+    <p class="section-textt"> Begin Your Journey In.... </p>
+    <div class="villas">
+      <div class="country-villas row">
+        <ul class="col-lg-3 col-md-4 col-sm-6 countries" *ngFor="let villas of countriesVillas">
+          <li class="country-name"><a [routerLink]="['/country/country-details',villas.id]">{{villas.name | uppercase}}</a></li>
+            <ul>
+              <li class="villa-name"><a routerLink="#"><i class="fa-solid fa-angle-right"></i> {{villas.villa[0].name}}</a></li>
+            </ul>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+    
+  <div  class="section--dark-grey container-full">
+      <div class="section-header">
+          <p class="section-header__title t-xs">Hakuna Matata Tours Signature Experiences</p>
+          <div class="section-footer">
+            <a routerLink="/booking" class="btn btn-book">BOOK NOW</a>
+        </div>
+      </div>
+      <p class="section-header__textt"> YOUR MOST MEMORABLE MOMENTS </p>
+      <div class="containerr container--full container-full">
+          <div class="card col-md-6 col-sm-12" *ngFor="let country of country">
+              <a [routerLink]="['/country/country-details',country.id]">
+                  <div class="card-image uno image-fluid p-0 m-0">
+                      <img src="{{country.image}}" alt="">
+                  </div>
+                  <div class="card-image dos image-fluid p-0 m-0">
+                    <video src="{{ country.video_url }}" [muted]="true" autoplay loop></video>
+                </div>
+                  <div class="card-img-overlay one">
+                      <p class="t-name">{{country.name}}</p>
+                      <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>
+                  </div>
+                  <div class="card-img-overlay two">
+                      <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>
+                      <p class="t-name">{{country.tag_name}}</p>
+                      <p class="explore">EXPLORE</p>
+                  </div>
+              </a>
+          </div>
+      </div>
+      <div class="section-footerr">
+          <a routerLink="/experience" class="btn btn-experience">Explore All Signature Experiences</a>
+      </div>
+  </div>

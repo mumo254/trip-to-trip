@@ -2,38 +2,24 @@
     background-color: #58595b;
 }
 
-.country-villas {
-    padding: 0 5%;
+.card h1 {
+    text-align: center;
+    color: yellow;
+    font-size: xx-large;
+    font-weight: 700;
+    margin-top: 20%;
 }
 
-.countries {
-    padding: 1% 2%;
+.card h2 {
+    text-align: center;
+    color: yellow;
+    font-size: larger;
+    font-weight: 700;
 }
 
-ul li {
-    list-style-type: none;
-}
-
-ul li a {
-    text-decoration: none;
-}
-
-.country-name a {
-    color: #FFC93C;
-    font-weight: 600;
-}
-
-.country-name a:hover {
-    color: #FFC;
-}
-
-.villa-name a {
-    color: #fff;
-    font-size: small;
-}
-
-.villa-name a:hover {
-    color: #999999;
+.card p {
+    text-align: center;
+    font-size: x-large;
 }
 
 .section-textt {

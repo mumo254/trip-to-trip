@@ -25,11 +25,11 @@ const routes: Routes = [
     canActivate: [],
     loadChildren: ()=> import('./experience/experience.module').then((m)=>m.ExperienceModule)
   },
-  {
-    path: 'dining',
-    canActivate: [],
-    loadChildren: ()=> import('./dining/dining.module').then((m)=>m.DiningModule)
-  },
+  // {
+  //   path: 'dining',
+  //   canActivate: [],
+  //   loadChildren: ()=> import('./dining/dining.module').then((m)=>m.DiningModule)
+  // },
   {
     path: 'country',
     canActivate: [],

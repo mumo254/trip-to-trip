@@ -22,55 +22,68 @@
     font-size: x-large;
 }
 
-.section-textt {
-    display: block;
-    margin: 15px auto 38px;
+
+/*.....course....*/
+
+.course {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #58595b;
+}
+
+.course h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFC93C;
+}
+
+.course p {
     color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3 {
     text-align: center;
-    max-width: 940px;
-    font-size: 2.125em;
-    font-weight: 100;
-    line-height: 1.25;
-    letter-spacing: .02em;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
-.section--center-content {
-    height: auto;
-    background-color: #FFC93C;
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.container--mw1140 {
-    max-width: 1140px!important;
-    margin: 0 80px;
+@media(max-width: 1000px) {
+    .row {
+        flex-direction: column;
+    }
 }
 
-.section-headerr {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: 40px 5px 0;
-}
 
-.section-header {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: 40px 5px 0;
-}
-
-.section-header__text {
-    display: block;
-    margin: 0 auto 38px;
-    color: #fff;
-    text-align: center;
-    font-size: 2.9em;
-    font-weight: lighter;
-    line-height: 2em;
-    letter-spacing: .1em;
-}
+/*........end of course.......*/
 
 .p {
-    color: #fff;
+    color: #000;
     text-align: center;
     display: block;
     margin-block-start: 1em;

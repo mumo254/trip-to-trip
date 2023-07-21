@@ -25,25 +25,28 @@
 
 /*.....course....*/
 
+
+/* Updated CSS styles for the services div and service items */
+
 .course {
     width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    background-color: #58595b;
+    background-color: #C38154;
 }
 
 .course h1 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 500;
     color: #FFC93C;
 }
 
 .course p {
-    color: #fff;
-    font-size: 17px;
+    color: #000;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 26px;
     padding: 10px;
 }
 
@@ -55,27 +58,90 @@
 }
 
 .course-col {
-    flex-basis: 31%;
-    background: #fff3f3;
+    flex-basis: 65%;
+    background: #C38154;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
+    padding: 30px 20px;
     box-sizing: border-box;
 }
 
 h3 {
     text-align: center;
+    font-size: 28px;
     font-weight: 500;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
-.course-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+.service {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
 }
 
-@media(max-width: 1000px) {
-    .row {
+.half {
+    flex-basis: 50%;
+    height: 35vh;
+}
+
+.half img {
+    height: 33vh;
+    width: 80%;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.service-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.explore-btn {
+    background-color: #FFC93C;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #FFA500;
+}
+
+
+/* Media Query to stack elements on smaller screens */
+
+@media(max-width: 768px) {
+    .service {
         flex-direction: column;
+        text-align: center;
+    }
+    .half {
+        flex-basis: 100%;
     }
 }
 
